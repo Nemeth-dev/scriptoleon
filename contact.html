@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact | Scriptoleon</title>
+<meta name="description" content="Contactez Scriptoleon pour un devis gratuit et sans engagement pour la creation de votre site internet sur mesure.">
+<meta name="theme-color" content="#050b14">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<nav class="nav-bar">
+    <div class="nav-interieur">
+        <a href="index.html" class="nav-marque">
+            <img src="images/lion-logo.webp" alt="Scriptoleon">
+            <span>Script<em>oleon</em></span>
+        </a>
+        <ul class="nav-liens">
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="exemples.html">Exemples</a></li>
+            <li><a href="tarifs.html">Tarifs</a></li>
+            <li><a href="contact.html" class="actif">Contact</a></li>
+        </ul>
+        <a href="contact.html" class="nav-cta desktop">Demander un devis</a>
+        <button class="nav-burger" id="navBurger" aria-label="Menu" aria-expanded="false">
+            <span></span><span></span><span></span>
+        </button>
+    </div>
+    <div class="nav-mobile" id="navMobile">
+        <a href="index.html">Accueil</a>
+        <a href="exemples.html">Exemples</a>
+        <a href="tarifs.html">Tarifs</a>
+        <a href="contact.html" class="actif">Contact</a>
+        <a href="contact.html" class="nav-cta">Demander un devis</a>
+    </div>
+</nav>
+
+<header class="hero-page">
+    <div class="conteneur">
+        <span class="section-eyebrow">Contact</span>
+        <h1>Parlons de votre projet.</h1>
+        <p>Decrivez-moi ce dont vous avez besoin, je reviens vers vous rapidement avec un devis clair.</p>
+    </div>
+</header>
+
+<section>
+    <div class="conteneur">
+        <div class="contact-grille-page">
+
+            <div class="contact-infos">
+                <h2>Comment ca se passe ?</h2>
+                <p>Trois etapes simples, sans jargon technique.</p>
+
+                <div class="contact-etape">
+                    <div class="rond">01</div>
+                    <div>
+                        <h3>Vous decrivez votre projet</h3>
+                        <p>Votre activite, ce que vous voulez presenter, vos photos si vous en avez.</p>
+                    </div>
+                </div>
+                <div class="contact-etape">
+                    <div class="rond">02</div>
+                    <div>
+                        <h3>Vous recevez un devis</h3>
+                        <p>Un tarif clair, base sur votre besoin reel, sans engagement.</p>
+                    </div>
+                </div>
+                <div class="contact-etape">
+                    <div class="rond">03</div>
+                    <div>
+                        <h3>Votre site est cree puis livre</h3>
+                        <p>Avec un apercu avant toute mise en ligne definitive.</p>
+                    </div>
+                </div>
+
+                <div class="contact-direct">
+                    <h3>Ou directement par email</h3>
+                    <a href="mailto:contact@scriptoleon.fr">contact@scriptoleon.fr</a>
+                </div>
+            </div>
+
+            <div class="formulaire-carte">
+                <form action="https://api.web3forms.com/submit" method="POST">
+                    <input type="hidden" name="access_key" value="A_REMPLACER_PAR_VOTRE_CLE">
+                    <input type="hidden" name="subject" value="Nouvelle demande de devis — Scriptoleon.fr">
+                    <input type="checkbox" name="botcheck" style="display:none;">
+
+                    <div class="champs-duo">
+                        <div class="champ">
+                            <label for="nom">Nom</label>
+                            <input type="text" id="nom" name="nom" required>
+                        </div>
+                        <div class="champ">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                    </div>
+
+                    <div class="champ">
+                        <label for="type_projet">Type de projet</label>
+                        <select id="type_projet" name="type_projet">
+                            <option>Location saisonniere</option>
+                            <option>Artisan / commerce</option>
+                            <option>Portfolio / independant</option>
+                            <option>Autre</option>
+                        </select>
+                    </div>
+
+                    <div class="champ">
+                        <label for="message">Votre projet en quelques mots</label>
+                        <textarea id="message" name="message" rows="5" required></textarea>
+                    </div>
+
+                    <button type="submit">Envoyer ma demande</button>
+                </form>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<footer>
+    <div class="conteneur">
+        <img src="images/lion-logo.webp" alt="Scriptoleon" class="lion-mini">
+        <p>&copy; 2026 Scriptoleon.fr — Sites internet sur mesure</p>
+    </div>
+</footer>
+
+<script>
+    const burger = document.getElementById('navBurger');
+    const menuMobile = document.getElementById('navMobile');
+    burger.addEventListener('click', () => {
+        const ouvert = menuMobile.classList.toggle('ouvert');
+        burger.classList.toggle('ouvert', ouvert);
+        burger.setAttribute('aria-expanded', ouvert);
+    });
+</script>
+</body>
+</html>

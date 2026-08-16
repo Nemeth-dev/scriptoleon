@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Tarifs | Scriptoleon</title>
+<meta name="description" content="Des tarifs clairs pour la creation de votre site internet sur mesure : site essentiel, site complet ou projet sur mesure. Devis gratuit.">
+<meta name="theme-color" content="#050b14">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<nav class="nav-bar">
+    <div class="nav-interieur">
+        <a href="index.html" class="nav-marque">
+            <img src="images/lion-logo.webp" alt="Scriptoleon">
+            <span>Script<em>oleon</em></span>
+        </a>
+        <ul class="nav-liens">
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="exemples.html">Exemples</a></li>
+            <li><a href="tarifs.html" class="actif">Tarifs</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <a href="contact.html" class="nav-cta desktop">Demander un devis</a>
+        <button class="nav-burger" id="navBurger" aria-label="Menu" aria-expanded="false">
+            <span></span><span></span><span></span>
+        </button>
+    </div>
+    <div class="nav-mobile" id="navMobile">
+        <a href="index.html">Accueil</a>
+        <a href="exemples.html">Exemples</a>
+        <a href="tarifs.html" class="actif">Tarifs</a>
+        <a href="contact.html">Contact</a>
+        <a href="contact.html" class="nav-cta">Demander un devis</a>
+    </div>
+</nav>
+
+<header class="hero-page">
+    <div class="conteneur">
+        <span class="section-eyebrow">Tarifs</span>
+        <h1>Des tarifs clairs, sans surprise.</h1>
+        <p>Chaque projet est different, mais voici une base pour vous situer avant de demander un devis personnalise.</p>
+    </div>
+</header>
+
+<section>
+    <div class="conteneur">
+
+        <div class="grille-tarifs">
+
+            <div class="carte-tarif">
+                <h3>Site Essentiel</h3>
+                <p class="description-carte">Une page de presentation claire pour exister en ligne rapidement.</p>
+                <div class="a-partir-de">A partir de</div>
+                <div class="prix">150 € <span>/ projet</span></div>
+                <ul class="liste-inclus">
+                    <li>Une page, design sur mesure</li>
+                    <li>Presentation + coordonnees</li>
+                    <li>Formulaire de contact fonctionnel</li>
+                    <li>Optimise mobile</li>
+                    <li>Bases SEO incluses</li>
+                </ul>
+                <a href="contact.html" class="btn btn-outline" style="color:var(--navy); border-color:var(--navy);">Demander un devis</a>
+            </div>
+
+            <div class="carte-tarif mise-en-avant">
+                <span class="badge-populaire">Le plus demande</span>
+                <h3>Site Complet</h3>
+                <p class="description-carte">Plusieurs pages, pour presenter une activite en detail.</p>
+                <div class="a-partir-de">A partir de</div>
+                <div class="prix">250 € <span>/ projet</span></div>
+                <ul class="liste-inclus">
+                    <li>Jusqu'a 5 pages</li>
+                    <li>Galerie photo par section</li>
+                    <li>Tarifs ou services detailles</li>
+                    <li>Carte interactive si pertinent</li>
+                    <li>Formulaire de contact fonctionnel</li>
+                    <li>Optimise mobile + bases SEO</li>
+                </ul>
+                <a href="contact.html" class="btn btn-or">Demander un devis</a>
+            </div>
+
+            <div class="carte-tarif">
+                <h3>Sur mesure</h3>
+                <p class="description-carte">Un besoin particulier ou une fonctionnalite specifique ?</p>
+                <div class="a-partir-de">Tarif</div>
+                <div class="prix" style="font-size:1.5rem;">Devis personnalise</div>
+                <ul class="liste-inclus">
+                    <li>Fonctionnalites specifiques</li>
+                    <li>Nombre de pages illimite</li>
+                    <li>Accompagnement dedie</li>
+                    <li>Echange prealable pour cadrer le projet</li>
+                </ul>
+                <a href="contact.html" class="btn btn-outline" style="color:var(--navy); border-color:var(--navy);">En discuter</a>
+            </div>
+
+        </div>
+
+        <div class="precisions">
+            <div>
+                <h3>Toujours inclus</h3>
+                <ul>
+                    <li>Mise en ligne sur un hebergement fiable</li>
+                    <li>Formulaire de contact operationnel des la livraison</li>
+                    <li>Un apercu avant toute mise en ligne definitive</li>
+                    <li>Un interlocuteur unique, du devis au suivi</li>
+                </ul>
+            </div>
+            <div>
+                <h3>A prevoir en plus</h3>
+                <ul>
+                    <li>Nom de domaine personnalise (environ 10 a 15 € / an)</li>
+                    <li>Maintenance ou modifications apres livraison, sur devis</li>
+                    <li>Un acompte peut etre demande a la validation du devis</li>
+                </ul>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<section class="cta-final">
+    <div class="conteneur">
+        <h2>Pas sur de la formule adaptee ?</h2>
+        <p>Decrivez-moi votre projet, je reviens vers vous avec un devis clair et sans engagement.</p>
+        <a href="contact.html" class="btn btn-or">Demander un devis</a>
+    </div>
+</section>
+
+<footer>
+    <div class="conteneur">
+        <img src="images/lion-logo.webp" alt="Scriptoleon" class="lion-mini">
+        <p>&copy; 2026 Scriptoleon.fr — Sites internet sur mesure</p>
+    </div>
+</footer>
+
+<script>
+    const burger = document.getElementById('navBurger');
+    const menuMobile = document.getElementById('navMobile');
+    burger.addEventListener('click', () => {
+        const ouvert = menuMobile.classList.toggle('ouvert');
+        burger.classList.toggle('ouvert', ouvert);
+        burger.setAttribute('aria-expanded', ouvert);
+    });
+</script>
+</body>
+</html>

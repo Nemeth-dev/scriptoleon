@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Exemples | Scriptoleon</title>
+<meta name="description" content="Decouvrez un exemple concret de site cree par Scriptoleon : presentation, tarifs, carte interactive et formulaire de contact.">
+<meta name="theme-color" content="#050b14">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<nav class="nav-bar">
+    <div class="nav-interieur">
+        <a href="index.html" class="nav-marque">
+            <img src="images/lion-logo.webp" alt="Scriptoleon">
+            <span>Script<em>oleon</em></span>
+        </a>
+        <ul class="nav-liens">
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="exemples.html" class="actif">Exemples</a></li>
+            <li><a href="tarifs.html">Tarifs</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <a href="contact.html" class="nav-cta desktop">Demander un devis</a>
+        <button class="nav-burger" id="navBurger" aria-label="Menu" aria-expanded="false">
+            <span></span><span></span><span></span>
+        </button>
+    </div>
+    <div class="nav-mobile" id="navMobile">
+        <a href="index.html">Accueil</a>
+        <a href="exemples.html" class="actif">Exemples</a>
+        <a href="tarifs.html">Tarifs</a>
+        <a href="contact.html">Contact</a>
+        <a href="contact.html" class="nav-cta">Demander un devis</a>
+    </div>
+</nav>
+
+<header class="hero-page">
+    <div class="conteneur">
+        <span class="section-eyebrow">Exemples</span>
+        <h1>Un exemple concret, plutot qu'une longue description.</h1>
+        <p>Voici un site reellement genere avec les memes outils que ceux utilises pour vos futurs projets.</p>
+    </div>
+</header>
+
+<section>
+    <div class="conteneur">
+
+        <div class="exemple-grand">
+            <div class="exemple-grille-photos">
+                <img src="images/exemple-salon.webp" alt="Salon">
+                <img src="images/exemple-cuisine.webp" alt="Cuisine">
+                <img src="images/exemple-sdb.webp" alt="Salle de bain">
+                <img src="images/exemple-entree.webp" alt="Entree">
+            </div>
+            <div class="exemple-grand-contenu">
+                <span class="exemple-tag mono">exemples/appartement-signature</span>
+                <h2>Appartement Signature — site de location saisonniere</h2>
+                <p>
+                    Un site complet pense pour la location courte duree : presentation
+                    du logement piece par piece, grille tarifaire par saison, carte
+                    interactive des lieux a proximite et formulaire de contact pret
+                    a recevoir des demandes de reservation.
+                </p>
+                <div class="exemple-fonctionnalites">
+                    <span>Galerie photo par piece</span>
+                    <span>Tarifs par saison</span>
+                    <span>Carte interactive</span>
+                    <span>Formulaire de contact</span>
+                    <span>Optimise mobile</span>
+                </div>
+                <div class="exemple-grand-boutons">
+                    <a href="contact.html" class="btn btn-navy">Un projet similaire ? Contactez-moi</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="a-venir">
+            <h3>D'autres exemples arrivent bientot</h3>
+            <p>
+                Chaque nouveau projet vient enrichir cette page. Artisans,
+                commerces de proximite, portfolios : si votre activite n'est pas
+                encore representee ici, ecrivez-moi, ce sera peut-etre le prochain
+                exemple.
+            </p>
+        </div>
+
+    </div>
+</section>
+
+<section class="cta-final">
+    <div class="conteneur">
+        <h2>Votre site pourrait etre le prochain exemple.</h2>
+        <p>Ecrivez-moi, je reviens vers vous rapidement avec un devis clair.</p>
+        <a href="contact.html" class="btn btn-or">Demander un devis</a>
+    </div>
+</section>
+
+<footer>
+    <div class="conteneur">
+        <img src="images/lion-logo.webp" alt="Scriptoleon" class="lion-mini">
+        <p>&copy; 2026 Scriptoleon.fr — Sites internet sur mesure</p>
+    </div>
+</footer>
+
+<script>
+    const burger = document.getElementById('navBurger');
+    const menuMobile = document.getElementById('navMobile');
+    burger.addEventListener('click', () => {
+        const ouvert = menuMobile.classList.toggle('ouvert');
+        burger.classList.toggle('ouvert', ouvert);
+        burger.setAttribute('aria-expanded', ouvert);
+    });
+</script>
+</body>
+</html>
